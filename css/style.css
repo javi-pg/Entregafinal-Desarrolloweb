@@ -1,3 +1,8 @@
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+}
 main {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
@@ -16,15 +21,16 @@ main h1 {
   height: 90%;
 }
 main .parrafo-index {
-  grid-column: 1/5;
-  grid-row: 2/2;
+  grid-column: 1/6;
+  grid-row: 3/5;
   font-family: Verdana, sans-serif;
   font-style: normal;
   width: 100%;
   height: 80%;
-  color: rgb(73, 92, 148);
+  color: rgb(27, 53, 130);
   padding: 10%;
   text-align: justify;
+  background-color: rgb(129, 143, 188);
 }
 main a {
   padding: 5%;
@@ -32,14 +38,15 @@ main a {
   font-family: Verdana, sans-serif;
   text-align: center;
   width: 100%;
-  height: 80%;
-  grid-column: 5/6;
-  grid-row: 3/4;
+  height: 60%;
+  grid-column: 2/4;
+  grid-row: 4/5;
+  color: skyblue;
 }
 main img {
   grid-column: 7/13;
-  grid-row: 2/7;
-  width: 100%;
+  grid-row: 2/5;
+  width: 80%;
   padding-right: 10%;
 }
 main h2 {
@@ -56,7 +63,7 @@ main .animacion {
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-delay: 1s;
-  grid-row: 3/5;
+  grid-row: 5/7;
   grid-column: 5/10;
 }
 @keyframes zoomzoom {
@@ -90,6 +97,11 @@ footer {
   color: rgb(27, 53, 130);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+}
 main {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
@@ -122,10 +134,11 @@ main .img-noticia-dos {
 }
 main .noticia-dos {
   background-color: rgb(129, 143, 188);
-  padding: 15%;
-  grid-column: 6/12;
+  padding: 10%;
+  grid-column: 6/13;
   grid-row: 3/3;
-  height: 80%;
+  max-width: 90%;
+  max-height: 90%;
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
 }
@@ -141,80 +154,142 @@ main .leer-mas {
   color: rgb(27, 53, 130);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+}
 main {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(13, 1fr);
   grid-gap: 5px;
+}
+main .parrafo-uno {
+  grid-column: 2/5;
+  grid-row: 2/5;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  width: 100%;
+  height: 80%;
+  color: rgb(27, 53, 130);
+  padding: 10%;
+  text-align: justify;
+  background-color: rgb(129, 143, 188);
+}
+main .parrafo-dos {
+  grid-column: 6/9;
+  grid-row: 2/5;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  width: 100%;
+  height: 80%;
+  color: rgb(27, 53, 130);
+  padding: 10%;
+  text-align: justify;
+  background-color: rgb(129, 143, 188);
+}
+main .parrafo-tres {
+  grid-column: 10/13;
+  grid-row: 2/5;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  width: 100%;
+  height: 80%;
+  color: rgb(27, 53, 130);
+  padding: 10%;
+  text-align: justify;
+  background-color: rgb(129, 143, 188);
 }
 main .imagen-somos {
-  grid-row: 2/2;
-  grid-column: 5/8;
+  grid-row: 4/8;
+  grid-column: 5/10;
   padding-top: 5%;
-  height: 100%;
-  width: 100%;
+  height: 80%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+}
 main {
   display: grid;
-  grid-template-rows: repeat(30, 1fr);
+  grid-template-rows: repeat(40, 1fr);
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5px;
+  grid-gap: 2px;
 }
-main h2 {
+
+.dudas {
   color: rgb(73, 92, 148);
   font-family: Verdana, sans-serif;
   font-style: normal;
   text-align: justify;
   padding-left: 10px;
-  grid-column: 2/10;
-  grid-row: 2/2;
+  grid-column: 2/12;
+  grid-row: 2/3;
 }
-main .nombre {
+
+.nombre {
   font-family: Verdana, sans-serif;
-  color: rgb(73, 92, 148);
+  color: rgb(27, 53, 130);
   font-style: normal;
   text-align: justify;
-  grid-column: 2/10;
+  grid-column: 2/12;
   grid-row: 3/3;
+  background-color: rgb(129, 143, 188);
 }
-main .input-uno {
+
+.input-uno {
   grid-column: 2/12;
   grid-row: 3/4;
   margin-top: 2%;
 }
-main .correo {
+
+.correo {
+  color: rgb(27, 53, 130);
+  background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
-  color: rgb(73, 92, 148);
   font-style: normal;
   text-align: justify;
   grid-column: 2/12;
   grid-row: 4/4;
 }
-main .input-dos {
+
+.input-dos {
   grid-column: 2/12;
   grid-row: 4/5;
   margin-top: 2%;
 }
-main .escribe {
+
+.escribe {
+  color: rgb(27, 53, 130);
+  background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
-  color: rgb(73, 92, 148);
   font-style: normal;
   text-align: justify;
   grid-column: 2/12;
   grid-row: 5/5;
 }
-main .input-tres {
+
+.input-tres {
   grid-column: 2/12;
   grid-row: 5/6;
   margin-top: 2%;
 }
-main .enviar {
-  grid-column: 2/12;
+
+.enviar {
+  grid-column: 6/13;
   grid-row: 6/6;
   margin-top: 2%;
+  width: 20%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+}
 main {
   display: grid;
   grid-template-rows: repeat(30, 1fr);
@@ -222,10 +297,43 @@ main {
   grid-gap: 5px;
 }
 main .imagen-persona {
-  grid-column: 5/7;
+  grid-column: 6/8;
   grid-row: 2/5;
-  height: 120px;
+  width: 90%;
   padding-left: 30%;
+}
+main .usuario {
+  font-family: Verdana, sans-serif;
+  color: rgb(27, 53, 130);
+  font-style: normal;
+  grid-column: 2/12;
+  text-align: center;
+  grid-row: 3/3;
+  background-color: rgb(129, 143, 188);
+}
+main .input-uno-ingresar {
+  grid-column: 6/13;
+  grid-row: 3/4;
+  margin-top: 5%;
+}
+main .contrasena {
+  font-family: Verdana, sans-serif;
+  color: rgb(27, 53, 130);
+  font-style: normal;
+  grid-column: 2/12;
+  text-align: center;
+  grid-row: 4/4;
+  background-color: rgb(129, 143, 188);
+}
+main .input-dos-ingresar {
+  grid-column: 6/13;
+  grid-row: 4/5;
+  margin-top: 5%;
+}
+main .ingresar {
+  grid-column: 6/13;
+  grid-row: 5/5;
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
