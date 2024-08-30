@@ -2,57 +2,65 @@
     main{width: 100%;}}
 
 main {display: grid;
-    grid-template-rows: repeat(40, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2px;
+    }   .imagen-contacto {
+        padding: 10%;
+        grid-column: 2/9;
+        grid-row: 3/6;
+        height: 80%;
     }
         .dudas {
         color: $color-de-textos;
         font-family: $fuentedeltexto;
         font-style: normal;
-        text-align: justify;
-        padding-left: 10px;
-        grid-column: 2/12;
-        grid-row: 2/3;
+        grid-column: 8/12;
+        grid-row: 2/2;
+        font-size: 25px;
         }
         .nombre{
             font-family: $fuentedeltexto;
             color: $colordetitulo;
             font-style: normal;
-            text-align: justify;
-            grid-column: 2/12;
+            text-align: center;
+            padding-top: 10%;
+            grid-column: 8/12;
             grid-row: 3/3;
             background-color: rgb(129, 143, 188);
         }
-        .input-uno {grid-column: 2/12;
+        .input-uno {grid-column: 8/12;
             grid-row: 3/4;
-            margin-top: 2%;}
+            margin: 30%}
         .correo{
                 color: $colordetitulo;
                 background-color: rgb(129, 143, 188);
                 font-family: $fuentedeltexto;
                 font-style: normal;
-                text-align: justify;
-                grid-column: 2/12;
+                padding-top: 10%;
+                text-align: center;
+                grid-column: 8/12;
                 grid-row: 4/4;
             }
-        .input-dos {grid-column: 2/12;
+        .input-dos {grid-column: 8/12;
                 grid-row: 4/5;
-                margin-top: 2%;}
+                margin-top: 6%;
+                margin: 30%;}
         .escribe {
             color: $colordetitulo;
             background-color: rgb(129, 143, 188);
             font-family: $fuentedeltexto;
             font-style: normal;
-            text-align: justify;
-            grid-column: 2/12;
+            text-align: center;
+            padding-top: 5%;
+            grid-column: 8/12;
             grid-row: 5/5;}
         .input-tres {
-            grid-column: 2/12;
+            grid-column: 8/12;
             grid-row: 5/6;
-            margin-top: 2%;}  
-        .enviar {grid-column: 6/13;
+            margin: 10%}  
+        .enviar {grid-column: 8/13;
             grid-row: 6/6;
-            margin-top: 2%;
-            width: 20%;}  
+            margin-top: 6%;
+            width: 80%;}  
     

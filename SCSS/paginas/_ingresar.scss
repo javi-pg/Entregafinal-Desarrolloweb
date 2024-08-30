@@ -6,8 +6,8 @@ main {display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 5px;
 
- .imagen-persona{
-    grid-column: 6 / 8; 
+ .imagen-ingresar{
+    grid-column: 1 / 8; 
     grid-row: 2 / 5;
     width: 90%;
     padding-left: 30%;}
@@ -15,34 +15,35 @@ main {display: grid;
     font-family: $fuentedeltexto;
     color: $colordetitulo;
     font-style: normal;
-    grid-column: 2/12;
+    grid-column: 8/12;
     text-align: center;
-    grid-row: 3/3;
+    grid-row: 2/2;
     background-color: rgb(129, 143, 188);
  }
  .input-uno-ingresar {
-    grid-column: 6/13;
-    grid-row: 3/4;
+    grid-column: 9/13;
+    grid-row: 2/3;
     margin-top: 5%;
  }
  .contrasena { 
     font-family: $fuentedeltexto;
     color: $colordetitulo;
     font-style: normal;
-    grid-column: 2/12;
+    grid-column: 8/12;
     text-align: center;
-    grid-row: 4/4;
+    grid-row: 3/3;
     background-color: rgb(129, 143, 188);
  }
  .input-dos-ingresar {
-    grid-column: 6/13;
-    grid-row: 4/5;
+    grid-column: 9/13;
+    grid-row: 3/4;
     margin-top: 5%;
 }
 .ingresar {
-    grid-column: 6/13;
-    grid-row: 5/5;
-    margin-top: 5%;
-    
+    grid-column: 8/12;
+    grid-row: 4/4;
+    text-align: center;
+    padding-top: 5%;
+    background-color: rgb(129, 143, 188);
 } 
 }

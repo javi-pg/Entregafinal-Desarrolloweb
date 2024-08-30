@@ -215,35 +215,42 @@ main .imagen-somos {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(40, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 2px;
+}
+
+.imagen-contacto {
+  padding: 10%;
+  grid-column: 2/9;
+  grid-row: 3/6;
+  height: 80%;
 }
 
 .dudas {
   color: rgb(73, 92, 148);
   font-family: Verdana, sans-serif;
   font-style: normal;
-  text-align: justify;
-  padding-left: 10px;
-  grid-column: 2/12;
-  grid-row: 2/3;
+  grid-column: 8/12;
+  grid-row: 2/2;
+  font-size: 25px;
 }
 
 .nombre {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
   font-style: normal;
-  text-align: justify;
-  grid-column: 2/12;
+  text-align: center;
+  padding-top: 10%;
+  grid-column: 8/12;
   grid-row: 3/3;
   background-color: rgb(129, 143, 188);
 }
 
 .input-uno {
-  grid-column: 2/12;
+  grid-column: 8/12;
   grid-row: 3/4;
-  margin-top: 2%;
+  margin: 30%;
 }
 
 .correo {
@@ -251,15 +258,17 @@ main {
   background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
   font-style: normal;
-  text-align: justify;
-  grid-column: 2/12;
+  padding-top: 10%;
+  text-align: center;
+  grid-column: 8/12;
   grid-row: 4/4;
 }
 
 .input-dos {
-  grid-column: 2/12;
+  grid-column: 8/12;
   grid-row: 4/5;
-  margin-top: 2%;
+  margin-top: 6%;
+  margin: 30%;
 }
 
 .escribe {
@@ -267,22 +276,23 @@ main {
   background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
   font-style: normal;
-  text-align: justify;
-  grid-column: 2/12;
+  text-align: center;
+  padding-top: 5%;
+  grid-column: 8/12;
   grid-row: 5/5;
 }
 
 .input-tres {
-  grid-column: 2/12;
+  grid-column: 8/12;
   grid-row: 5/6;
-  margin-top: 2%;
+  margin: 10%;
 }
 
 .enviar {
-  grid-column: 6/13;
+  grid-column: 8/13;
   grid-row: 6/6;
-  margin-top: 2%;
-  width: 20%;
+  margin-top: 6%;
+  width: 80%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
@@ -296,8 +306,8 @@ main {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
-main .imagen-persona {
-  grid-column: 6/8;
+main .imagen-ingresar {
+  grid-column: 1/8;
   grid-row: 2/5;
   width: 90%;
   padding-left: 30%;
@@ -306,34 +316,36 @@ main .usuario {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
   font-style: normal;
-  grid-column: 2/12;
+  grid-column: 8/12;
   text-align: center;
-  grid-row: 3/3;
+  grid-row: 2/2;
   background-color: rgb(129, 143, 188);
 }
 main .input-uno-ingresar {
-  grid-column: 6/13;
-  grid-row: 3/4;
+  grid-column: 9/13;
+  grid-row: 2/3;
   margin-top: 5%;
 }
 main .contrasena {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
   font-style: normal;
-  grid-column: 2/12;
+  grid-column: 8/12;
   text-align: center;
-  grid-row: 4/4;
+  grid-row: 3/3;
   background-color: rgb(129, 143, 188);
 }
 main .input-dos-ingresar {
-  grid-column: 6/13;
-  grid-row: 4/5;
+  grid-column: 9/13;
+  grid-row: 3/4;
   margin-top: 5%;
 }
 main .ingresar {
-  grid-column: 6/13;
-  grid-row: 5/5;
-  margin-top: 5%;
+  grid-column: 8/12;
+  grid-row: 4/4;
+  text-align: center;
+  padding-top: 5%;
+  background-color: rgb(129, 143, 188);
 }
 
 /*# sourceMappingURL=style.css.map */
