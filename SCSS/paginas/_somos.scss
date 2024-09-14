@@ -2,7 +2,7 @@
     main{width: 100%;}}
 
 main {display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(13, 1fr);
     grid-gap: 5px;
     .parrafo-uno {
@@ -42,10 +42,14 @@ main {display: grid;
         background-color: rgb(129, 143, 188);
     }
     .imagen-somos { 
-        grid-row: 4/8; 
-        grid-column: 5/10;
-        padding-top: 5%;
+        grid-row: 4/6; 
+        grid-column: 5/9;
+        padding-top: 30%;
         height: 80%;
     }
-    
+    .contacto {
+        grid-row: 3/3; 
+        grid-column: 10/13; 
+        padding-top: 20%; 
+    }
 }

@@ -2,13 +2,13 @@
     main{width: 100%;}}
 
 main {display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2px;
-    }   .imagen-contacto {
+     .imagen-contacto {
         padding: 10%;
         grid-column: 2/9;
-        grid-row: 3/6;
+        grid-row: 2/5;
         height: 80%;
     }
         .dudas {
@@ -63,4 +63,4 @@ main {display: grid;
             grid-row: 6/6;
             margin-top: 6%;
             width: 80%;}  
-    
+        } 

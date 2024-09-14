@@ -2,10 +2,13 @@
   main {
     width: 100%;
   }
+  .parrafo-index {
+    width: 100%;
+  }
 }
 main {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
@@ -18,53 +21,72 @@ main h1 {
   grid-column: 3/10;
   grid-row: 1/1;
   border: 5px solid rgb(27, 53, 130);
-  height: 90%;
+  height: fit-content;
 }
 main .parrafo-index {
   grid-column: 1/6;
-  grid-row: 3/5;
+  grid-row: 1/2;
   font-family: Verdana, sans-serif;
   font-style: normal;
   width: 100%;
-  height: 80%;
+  height: 70%;
   color: rgb(27, 53, 130);
+  margin-top: 40%;
   padding: 10%;
   text-align: justify;
   background-color: rgb(129, 143, 188);
 }
 main a {
-  padding: 5%;
-  font-size: 20px;
+  margin-top: 200%;
   font-family: Verdana, sans-serif;
   text-align: center;
   width: 100%;
   height: 60%;
-  grid-column: 2/4;
-  grid-row: 4/5;
+  grid-column: 1/3;
+  grid-row: 1/2;
   color: skyblue;
 }
 main img {
   grid-column: 7/13;
-  grid-row: 2/5;
+  grid-row: 1/3;
+  margin-top: 30%;
   width: 80%;
   padding-right: 10%;
 }
-main h2 {
-  grid-column: 4/12;
-  grid-row: 4/6;
+main .titulo-tratos {
+  grid-column: 5/9;
+  grid-row: 3/3;
+  margin-top: 30%;
+  border: 5px solid rgb(27, 53, 130);
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  height: 10%;
   width: 100%;
-  padding-right: 10%;
+  color: rgb(27, 53, 130);
+  text-align: center;
+}
+main .tratos {
+  grid-column: 2/12;
+  grid-row: 3/6;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  height: fit-content;
+  width: 100%;
+  color: rgb(27, 53, 130);
+  margin-top: 30%;
+  padding: 5%;
+  text-align: justify;
+  background-color: rgb(129, 143, 188);
 }
 main .animacion {
   color: aquamarine;
   text-align: center;
-  margin: 100px auto;
   animation-name: zoomzoom;
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-delay: 1s;
-  grid-row: 5/7;
-  grid-column: 5/10;
+  grid-row: 5/6;
+  grid-column: 4/10;
 }
 @keyframes zoomzoom {
   0% {
@@ -80,7 +102,7 @@ main .animacion {
   }
   75% {
     color: aquamarine;
-    transform: scalex(2);
+    transform: scalex(3);
   }
   100% {
     color: rgb(27, 53, 130);
@@ -95,6 +117,11 @@ footer {
   font-family: Verdana, sans-serif;
   font-style: normal;
   color: rgb(27, 53, 130);
+  grid-row: 5/6;
+}
+footer .imagen-linkedin {
+  grid-column: 1/2;
+  width: 5%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
@@ -104,7 +131,7 @@ footer {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
@@ -153,6 +180,35 @@ main .leer-mas {
   grid-row: 3/4;
   color: rgb(27, 53, 130);
 }
+main .img-noticia-tres {
+  background-color: rgb(129, 143, 188);
+  grid-column: 1/6;
+  grid-row: 4/4;
+  max-width: 90%;
+  padding: 10%;
+}
+main .noticia-tres {
+  background-color: rgb(129, 143, 188);
+  padding: 10%;
+  grid-column: 6/13;
+  grid-row: 4/4;
+  max-width: 90%;
+  max-height: 90%;
+  font-family: Verdana, sans-serif;
+  color: rgb(27, 53, 130);
+}
+main .leer-mas-tres {
+  padding-top: 55%;
+  padding-left: 70%;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  grid-column: 4/10;
+  grid-row: 4/5;
+  color: rgb(27, 53, 130);
+}
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   main {
@@ -161,7 +217,7 @@ main .leer-mas {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(13, 1fr);
   grid-gap: 5px;
 }
@@ -202,10 +258,15 @@ main .parrafo-tres {
   background-color: rgb(129, 143, 188);
 }
 main .imagen-somos {
-  grid-row: 4/8;
-  grid-column: 5/10;
-  padding-top: 5%;
+  grid-row: 4/6;
+  grid-column: 5/9;
+  padding-top: 30%;
   height: 80%;
+}
+main .contacto {
+  grid-row: 3/3;
+  grid-column: 10/13;
+  padding-top: 20%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
@@ -215,19 +276,17 @@ main .imagen-somos {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 2px;
 }
-
-.imagen-contacto {
+main .imagen-contacto {
   padding: 10%;
   grid-column: 2/9;
-  grid-row: 3/6;
+  grid-row: 2/5;
   height: 80%;
 }
-
-.dudas {
+main .dudas {
   color: rgb(73, 92, 148);
   font-family: Verdana, sans-serif;
   font-style: normal;
@@ -235,8 +294,7 @@ main {
   grid-row: 2/2;
   font-size: 25px;
 }
-
-.nombre {
+main .nombre {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
   font-style: normal;
@@ -246,14 +304,12 @@ main {
   grid-row: 3/3;
   background-color: rgb(129, 143, 188);
 }
-
-.input-uno {
+main .input-uno {
   grid-column: 8/12;
   grid-row: 3/4;
   margin: 30%;
 }
-
-.correo {
+main .correo {
   color: rgb(27, 53, 130);
   background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
@@ -263,15 +319,13 @@ main {
   grid-column: 8/12;
   grid-row: 4/4;
 }
-
-.input-dos {
+main .input-dos {
   grid-column: 8/12;
   grid-row: 4/5;
   margin-top: 6%;
   margin: 30%;
 }
-
-.escribe {
+main .escribe {
   color: rgb(27, 53, 130);
   background-color: rgb(129, 143, 188);
   font-family: Verdana, sans-serif;
@@ -281,14 +335,12 @@ main {
   grid-column: 8/12;
   grid-row: 5/5;
 }
-
-.input-tres {
+main .input-tres {
   grid-column: 8/12;
   grid-row: 5/6;
   margin: 10%;
 }
-
-.enviar {
+main .enviar {
   grid-column: 8/13;
   grid-row: 6/6;
   margin-top: 6%;
@@ -302,7 +354,7 @@ main {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(30, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
