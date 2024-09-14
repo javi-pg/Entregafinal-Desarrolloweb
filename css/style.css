@@ -2,17 +2,14 @@
   main {
     width: 100%;
   }
-  .parrafo-index {
-    width: 100%;
-  }
 }
-main {
+.main-index {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
-main h1 {
+.main-index h1 {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
   text-align: center;
@@ -20,65 +17,79 @@ main h1 {
   padding-top: 100px;
   grid-column: 3/10;
   grid-row: 1/1;
-  border: 5px solid rgb(27, 53, 130);
+  border: 10px solid rgb(27, 53, 130);
   height: fit-content;
 }
-main .parrafo-index {
+.main-index .parrafo-index {
   grid-column: 1/6;
-  grid-row: 1/2;
+  grid-row: 2/3;
   font-family: Verdana, sans-serif;
   font-style: normal;
   width: 100%;
-  height: 70%;
+  height: 60%;
   color: rgb(27, 53, 130);
-  margin-top: 40%;
+  margin-left: 15%;
+  margin-top: 10%;
   padding: 10%;
   text-align: justify;
   background-color: rgb(129, 143, 188);
 }
-main a {
-  margin-top: 200%;
+.main-index a {
+  margin-top: 110%;
+  margin-left: 40%;
   font-family: Verdana, sans-serif;
   text-align: center;
   width: 100%;
   height: 60%;
   grid-column: 1/3;
-  grid-row: 1/2;
+  grid-row: 2/2;
   color: skyblue;
 }
-main img {
+.main-index img {
   grid-column: 7/13;
-  grid-row: 1/3;
-  margin-top: 30%;
-  width: 80%;
-  padding-right: 10%;
+  grid-row: 2/3;
+  margin-top: 5%;
+  height: 80%;
+  width: 90%;
+  margin-right: 10%;
 }
-main .titulo-tratos {
-  grid-column: 5/9;
+.main-index .titulo-tratos {
+  grid-column: 2/12;
   grid-row: 3/3;
-  margin-top: 30%;
   border: 5px solid rgb(27, 53, 130);
   font-family: Verdana, sans-serif;
   font-style: normal;
-  height: 10%;
-  width: 100%;
+  height: fit-content;
   color: rgb(27, 53, 130);
   text-align: center;
 }
-main .tratos {
+.main-index .tratos {
   grid-column: 2/12;
-  grid-row: 3/6;
+  grid-row: 3/4;
+  margin-top: 10%;
   font-family: Verdana, sans-serif;
   font-style: normal;
-  height: fit-content;
   width: 100%;
+  height: fit-content;
   color: rgb(27, 53, 130);
-  margin-top: 30%;
   padding: 5%;
   text-align: justify;
   background-color: rgb(129, 143, 188);
 }
-main .animacion {
+.main-index .imagen-dos-index {
+  grid-column: 2/7;
+  grid-row: 4/4;
+  max-height: 70%;
+  width: 80%;
+}
+.main-index .imagen-tres-index {
+  grid-column: 7/12;
+  grid-row: 4/5;
+  margin-top: 5%;
+  max-height: 70%;
+  width: 70%;
+}
+.main-index .animacion {
   color: aquamarine;
   text-align: center;
   animation-name: zoomzoom;
@@ -102,7 +113,7 @@ main .animacion {
   }
   75% {
     color: aquamarine;
-    transform: scalex(3);
+    transform: scaleX(3);
   }
   100% {
     color: rgb(27, 53, 130);
@@ -117,7 +128,6 @@ footer {
   font-family: Verdana, sans-serif;
   font-style: normal;
   color: rgb(27, 53, 130);
-  grid-row: 5/6;
 }
 footer .imagen-linkedin {
   grid-column: 1/2;
@@ -131,9 +141,21 @@ footer .imagen-linkedin {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
+}
+main h1 {
+  font-family: Verdana, sans-serif;
+  color: rgb(27, 53, 130);
+  text-align: center;
+  letter-spacing: 10px;
+  padding-top: 100px;
+  grid-column: 3/10;
+  grid-row: 1/1;
+  border: 10px solid rgb(27, 53, 130);
+  height: fit-content;
+  padding-bottom: 0%;
 }
 main .img-noticia-uno {
   grid-column: 1/6;
@@ -147,7 +169,7 @@ main .noticia-uno {
   grid-column: 6/13;
   grid-row: 2/3;
   max-width: 90%;
-  max-height: 90%;
+  height: fit-content;
   font-family: Verdana, sans-serif;
   background-color: rgb(129, 143, 188);
   color: rgb(27, 53, 130);
@@ -156,6 +178,7 @@ main .img-noticia-dos {
   background-color: rgb(129, 143, 188);
   grid-column: 1/6;
   grid-row: 3/3;
+  margin-top: 30%;
   max-width: 90%;
   padding: 10%;
 }
@@ -163,14 +186,15 @@ main .noticia-dos {
   background-color: rgb(129, 143, 188);
   padding: 10%;
   grid-column: 6/13;
-  grid-row: 3/3;
+  grid-row: 3/4;
   max-width: 90%;
   max-height: 90%;
+  margin-top: 20%;
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
 }
 main .leer-mas {
-  padding-top: 40%;
+  padding-top: 30%;
   font-size: 20px;
   font-family: Verdana, sans-serif;
   text-align: center;
@@ -184,6 +208,8 @@ main .img-noticia-tres {
   background-color: rgb(129, 143, 188);
   grid-column: 1/6;
   grid-row: 4/4;
+  margin-top: 20%;
+  margin-bottom: 30%;
   max-width: 90%;
   padding: 10%;
 }
@@ -191,9 +217,11 @@ main .noticia-tres {
   background-color: rgb(129, 143, 188);
   padding: 10%;
   grid-column: 6/13;
-  grid-row: 4/4;
+  grid-row: 4/5;
   max-width: 90%;
   max-height: 90%;
+  margin-top: 20%;
+  margin-bottom: 30%;
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
 }
@@ -217,15 +245,16 @@ main .leer-mas-tres {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: repeat(13, 1fr);
   grid-gap: 5px;
 }
 main .parrafo-uno {
-  grid-column: 2/5;
-  grid-row: 2/5;
+  grid-column: 1/4;
+  grid-row: 2/4;
   font-family: Verdana, sans-serif;
   font-style: normal;
+  margin-left: 10%;
   width: 100%;
   height: 80%;
   color: rgb(27, 53, 130);
@@ -234,8 +263,8 @@ main .parrafo-uno {
   background-color: rgb(129, 143, 188);
 }
 main .parrafo-dos {
-  grid-column: 6/9;
-  grid-row: 2/5;
+  grid-column: 5/8;
+  grid-row: 2/4;
   font-family: Verdana, sans-serif;
   font-style: normal;
   width: 100%;
@@ -246,11 +275,11 @@ main .parrafo-dos {
   background-color: rgb(129, 143, 188);
 }
 main .parrafo-tres {
-  grid-column: 10/13;
-  grid-row: 2/5;
+  grid-column: 9/13;
+  grid-row: 2/4;
   font-family: Verdana, sans-serif;
   font-style: normal;
-  width: 100%;
+  margin-right: 10%;
   height: 80%;
   color: rgb(27, 53, 130);
   padding: 10%;
@@ -259,14 +288,14 @@ main .parrafo-tres {
 }
 main .imagen-somos {
   grid-row: 4/6;
-  grid-column: 5/9;
-  padding-top: 30%;
+  grid-column: 4/9;
   height: 80%;
 }
 main .contacto {
   grid-row: 3/3;
-  grid-column: 10/13;
-  padding-top: 20%;
+  grid-column: 11/13;
+  padding-top: 10%;
+  font-size: 150%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
@@ -276,73 +305,64 @@ main .contacto {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 2px;
+  grid-gap: 5px;
 }
 main .imagen-contacto {
-  padding: 10%;
-  grid-column: 2/9;
-  grid-row: 2/5;
+  padding-top: 10%;
+  grid-column: 3/10;
+  grid-row: 6/7;
   height: 80%;
+  margin: 0 auto;
 }
 main .dudas {
   color: rgb(73, 92, 148);
   font-family: Verdana, sans-serif;
   font-style: normal;
-  grid-column: 8/12;
+  grid-column: 2/12;
   grid-row: 2/2;
   font-size: 25px;
 }
-main .nombre {
+main .nombre, main .correo, main .escribe {
   font-family: Verdana, sans-serif;
   color: rgb(27, 53, 130);
+  background-color: rgb(129, 143, 188);
   font-style: normal;
   text-align: center;
-  padding-top: 10%;
-  grid-column: 8/12;
-  grid-row: 3/3;
-  background-color: rgb(129, 143, 188);
+  grid-column: 4/9;
+  padding: 10px;
 }
-main .input-uno {
-  grid-column: 8/12;
-  grid-row: 3/4;
-  margin: 30%;
+main .nombre {
+  margin-top: 10%;
+  grid-row: 2/3;
 }
 main .correo {
-  color: rgb(27, 53, 130);
-  background-color: rgb(129, 143, 188);
-  font-family: Verdana, sans-serif;
-  font-style: normal;
-  padding-top: 10%;
-  text-align: center;
-  grid-column: 8/12;
-  grid-row: 4/4;
-}
-main .input-dos {
-  grid-column: 8/12;
-  grid-row: 4/5;
-  margin-top: 6%;
-  margin: 30%;
+  grid-row: 3/4;
 }
 main .escribe {
-  color: rgb(27, 53, 130);
-  background-color: rgb(129, 143, 188);
-  font-family: Verdana, sans-serif;
-  font-style: normal;
-  text-align: center;
-  padding-top: 5%;
-  grid-column: 8/12;
-  grid-row: 5/5;
+  grid-row: 4/5;
+}
+main .input-uno, main .input-dos, main .input-tres, main .enviar {
+  grid-column: 5/8;
+  width: 100%;
+  padding: 10px;
+}
+main .input-uno {
+  grid-row: 2/3;
+  margin-top: 25%;
+}
+main .input-dos {
+  grid-row: 3/4;
+  margin-top: 10%;
 }
 main .input-tres {
-  grid-column: 8/12;
-  grid-row: 5/6;
-  margin: 10%;
+  grid-row: 4/5;
+  width: 100%;
+  margin-top: 10%;
 }
 main .enviar {
-  grid-column: 8/13;
-  grid-row: 6/6;
+  grid-row: 5/6;
   margin-top: 6%;
   width: 80%;
 }
@@ -354,7 +374,7 @@ main .enviar {
 }
 main {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
 }
